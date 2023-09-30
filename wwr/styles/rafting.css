@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Mooli&display=swap');
+
+:root {
+    --primary-color: rgb(7, 13, 89);
+    --secondary-color: rgb(56, 102, 65);
+    --accent1-color: rgb(211, 243, 238);
+    --accent2-color: rgb(201, 225, 228);
+
+    --heading-font: "Gloock", serif;
+    --paragraph-font: "Mooli", sans-serif;
+
+    --nav-background-color: rgb(7, 13, 89);
+    --nav-link-color: rgb(201, 225, 228);
+    --nav-hover-link-color: rgb(7, 13, 89);
+    --nav-hover-background-color: #C9E1E4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    color: var(--accent2-color);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: rgba(7, 13, 89, 0.7);
+    margin: 0;
+    padding: 15px;
+    font-size: 36pt;
+    width: 96.9%;
+    text-align: center;
+}
+
+article {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(201, 225, 228, .9);
+}
+
+article img {
+    float: right;
+    height: 120px;
+    width: auto;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
