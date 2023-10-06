@@ -24,8 +24,45 @@ p {
     padding: 20px;
 }
 
-nav a {
+ /* CSS for header and navbar */
+header {
+    margin-bottom: 1rem;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(18, 1fr);
+    background-color: var(--nav-background-color);
+}
+
+header img {
+    width: 160px;
+    height: auto;
+    grid-column: 3 / 6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-column: 8 / 18;
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+}
+
+header nav a {
+    display: block;
     text-decoration: none;
+    padding: 1rem;
+}
+
+header nav a:link, header nav a:visited {
+    color: var(--nav-link-color);
+}
+
+header nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 body {
@@ -45,9 +82,8 @@ body {
     left: 0;
     background-color: rgba(7, 13, 89, 0.7);
     margin: 0;
-    padding: 15px;
     font-size: 36pt;
-    width: 96.9%;
+    width: 100%;
     text-align: center;
 }
 
@@ -70,4 +106,80 @@ article img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+/* Styling for history section */
+.history {
+    background-color: var(--accent2-color);
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "heading heading heading"
+    "first-p image second-p";
+}
+
+.history h2 {
+    font-size: 24pt;
+    grid-area: heading;
+}
+
+.history #p1 {grid-area: first-p;}
+
+.history img {grid-area: image;}
+
+.history #p2 {grid-area: second-p;}
+
+
+/* style for adventures section */
+.adventure {
+    background-color: var(--accent2-color);
+    margin: 30px 0;
+    display: grid;
+    justify-items: center;
+}
+
+.adventure h2 {
+    font-size: 24pt;
+}
+
+.adventure img {
+    width: 150px;
+    height: auto;
+}
+
+.adventure div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+}
+
+.adventure figure {
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    flex: 1;
+}
+
+/* style for footer */
+footer {
+    padding: 0 40px;
+    color: var(--accent1-color);
+    background-color: var(--nav-background-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    background-color: var(--accent1-color);
+    border-radius: 50px;
+}
+
+footer nav a {
+    display: block;
+    text-decoration: none;
+    padding: 0 10px;
 }
