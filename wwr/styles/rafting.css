@@ -63,6 +63,7 @@ header nav a:link, header nav a:visited {
 header nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    border-radius: 50px;
 }
 
 body {
