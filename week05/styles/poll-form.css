@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Mooli&display=swap');
+
+:root {
+    --heading-font: "Gloock", serif;
+    --normal-font: "Mooli", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--normal-font);
+    background: #fff;
+}
+
+header {
+    margin: 0 auto 20px auto;
+    width: 650px;
+}
+ 
+h1 {
+    font-family: var(--heading-font);
+}
+
+form {
+    width: 650px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    background-color: lightgrey;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+legend {
+    color: navy;
+    font-family: var(--heading-font);
+    font-size: 24pt;
+    padding: 10px;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+label[for="feedback"] {
+    text-align: center;
+    padding-right: 0;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    height: 22px;
+    width: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    font-family: inherit;
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid navy;
+    color: rgb(185, 255, 255);
+    background-color: navy;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(185, 255, 255);
+    color: navy;
+    border: 1px solid rgb(185, 255, 255);
+}
+
+footer {
+    padding: 10px;
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 5px;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 5px;
+}
