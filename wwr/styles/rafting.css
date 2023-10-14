@@ -212,7 +212,7 @@ footer nav a {
     grid-area: heading;
 }
 
-.company-info section {
+.company-info div {
     margin-left: 10px;
     height: 200px;
     background-color: var(--accent1-color);
@@ -222,7 +222,7 @@ footer nav a {
     align-self: center;
 }
 
-.company-info section strong {
+.company-info div strong {
     font-size: 13pt;
     color: var(--primary-color);
 }
@@ -261,7 +261,6 @@ footer nav a {
 fieldset {
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr minmax(3fr, 10fr);
 }
 
 legend {
