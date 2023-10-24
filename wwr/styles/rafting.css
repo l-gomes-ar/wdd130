@@ -79,6 +79,7 @@ body {
 
 .hero h1 {
     color: var(--accent2-color);
+    padding: 10px 0;
     position: absolute;
     top: 20px;
     left: 0;
@@ -98,7 +99,7 @@ body {
     background-color: rgba(201, 225, 228, .9);
 }
 
-article img {
+.hero article img {
     float: right;
     height: 120px;
     width: auto;
@@ -272,8 +273,8 @@ legend {
     padding: 0 10px;
 }
 
-input,
-textarea {
+.contact-us input,
+.contact-us textarea {
     padding: 0.7rem;
     font-size: 1rem;
 }
@@ -294,7 +295,7 @@ textarea {
     height: 100px;
 }
 
-button {
+.contact-us button {
     font-family: inherit;
     font-size: 12pt;
     font-weight: bold;
@@ -305,14 +306,15 @@ button {
     border-radius: 10px;
 }
 
-button:hover {
+.contact-us button:hover {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
     border: 1px solid var(--secondary-color);
     cursor: pointer;
 }
 
-/* Styling for start adventure section */
+/* Styling for start adventure and some common parts with the index 
+call to action section */
 .hero-trips {
     padding: 0;
     margin: 100px 10px;
@@ -321,7 +323,8 @@ button:hover {
     gap: 5%;
 }
 
-.hero-trips h2 {
+.hero-trips h1,
+.form-call h1 {
     margin: 0;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -333,19 +336,22 @@ button:hover {
     box-shadow: 0 0 30px gray;
 }
 
-.hero-trips p {
+.hero-trips p,
+.form-call p {
     margin: 0;
     padding: 0;
     text-align: left;
     margin-bottom: 30px;
 }
 
-.hero-trips div {
+.hero-trips div,
+.form-call div {
     display: flex;
     justify-content: right;
 }
 
-.hero-trips a {
+.hero-trips a,
+.form-call a {
     color: white;
     text-transform: uppercase;
     padding: 10px 30px;
@@ -355,7 +361,8 @@ button:hover {
     border-radius: 10px;
 }
 
-.hero-trips a:hover {
+.hero-trips a:hover,
+.form-call a:hover {
     color: var(--nav-background-color);
     background-color: var(--accent1-color);
 }
@@ -422,3 +429,101 @@ button:hover {
     padding: 20px;
     border-radius: 5px;
 }
+
+/* Styling hero index section */
+#index-h1 {
+    color: azure;
+    padding: 10px 0;
+    background-color: rgb(0, 0, 0, .6);
+}
+
+.index-hero {
+    margin: 50px 0;
+    box-shadow: 0 0 30px gray;
+}
+
+
+/* Styling form and call to action section */
+.form-call {
+    padding: 0;
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    gap: 5%;
+}
+
+.form-call article {
+    box-shadow: 0 0 30px gray;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+}
+
+.form-call > form {
+    color: azure;
+    background-color: var(--nav-background-color);
+    padding: 20px;
+    height: 100%;
+    width: auto;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.form-call fieldset {
+    height: 50%;
+}
+
+.form-call legend {
+    font-size: 17pt;
+}
+
+.form-call button {
+    margin-top: 90px;
+    font-family: inherit;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid var(--accent1-color);
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.form-call button:hover {
+    background-color: var(--accent2-color);
+    border: 1px solid var(--accent2-color);
+    cursor: pointer;
+}
+
+.form-call article a:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+/* Styling for css grid with addition info section */
+.additional-info {
+    display: grid;
+    gap: 30px;
+    margin: 50px 0;
+    grid-template-areas: 
+    "article1 article2";
+}
+
+.additional-info div {
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 30px gray;
+}
+
+.additional-info img {
+    float: right;
+    height: 150px;
+    width: auto;
+    margin: 10px;
+}
+
+#article1 { grid-area: article1;}
+#article2 { grid-area: article2;}
