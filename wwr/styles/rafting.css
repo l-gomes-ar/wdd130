@@ -75,6 +75,7 @@ body {
 
 .hero {
     position: relative;
+    margin: 50px 0;
 }
 
 .hero h1 {
@@ -113,6 +114,7 @@ body {
 
 /* Styling for history section */
 .history {
+    margin: 100px 0;
     background-color: var(--accent2-color);
     display: grid;
     justify-items: center;
@@ -133,7 +135,7 @@ body {
 /* Styling for 'Adventures' and 'Our Staff' sections */
 .adventure, .staff {
     background-color: var(--accent2-color);
-    margin: 30px 0;
+    margin: 100px 0;
     display: grid;
     justify-items: center;
 }
@@ -143,7 +145,7 @@ h2 {
 }
 
 .adventure img, .staff img {
-    width: 150px;
+    width: 210px;
     height: auto;
 }
 
@@ -438,7 +440,6 @@ call to action section */
 }
 
 .index-hero {
-    margin: 50px 0;
     box-shadow: 0 0 30px gray;
 }
 
