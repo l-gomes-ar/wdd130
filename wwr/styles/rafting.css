@@ -234,7 +234,8 @@ footer nav a {
     margin: 0;
 }
 
-.company-info iframe { 
+.company-info iframe {
+    border: 0;
     grid-area: map;
     border-radius: 20px;
 }
